@@ -1,7 +1,8 @@
 # Aplicativo de Carros Elétricos 
 
 ## Sobre o Autor
-Oi, sou o Leonardo! Estou construindo esse aplicativo Android utilizando Kotlin. 
+Oi, sou o Leonardo! 
+<br>Estou construindo esse aplicativo Android utilizando Kotlin. 
 
 
 
