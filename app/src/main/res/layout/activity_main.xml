@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".presentation.MainActivity">
 
     <TextView
         android:id="@+id/tv_titulo"
@@ -39,11 +39,11 @@
 
     <ImageView
         android:id="@+id/iv_image"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:src="@drawable/eletric_car"
-        app:layout_constraintStart_toEndOf="@id/tv_carros"
+        app:layout_constraintLeft_toLeftOf="@id/tv_titulo"
         app:layout_constraintTop_toBottomOf="@+id/tv_carros" />
 
     <TextView
@@ -84,7 +84,7 @@
 
     <TextView
         android:id="@+id/tv_potencia"
-        android:layout_width="60dp"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="@string/potencia"
@@ -102,7 +102,7 @@
 
     <TextView
         android:id="@+id/tv_recarga"
-        android:layout_width="60dp"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="@string/recarga"
@@ -111,7 +111,7 @@
 
     <TextView
         android:id="@+id/tv_recarga_value"
-        android:layout_width="80dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="50min"

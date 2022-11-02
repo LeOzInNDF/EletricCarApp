@@ -1,11 +1,12 @@
-package br.com.eletriccarapp
+package br.com.eletriccarapp.presentation
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import br.com.eletriccarapp.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,7 +33,9 @@ class MainActivity : AppCompatActivity() {
 
     fun setupListners() {
         btnCalcular.setOnClickListener {
-            calcular()
+            //calcular()
+            startActivity(Intent(this, CalcularAutonimiaActivity::class.java))
+
         }
     }
 
