@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="@string/title"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -113,54 +114,19 @@
         android:id="@+id/tv_recarga_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="5dp"
         android:text="50min"
         app:layout_constraintStart_toEndOf="@+id/tv_recarga"
         app:layout_constraintTop_toTopOf="@+id/tv_recarga" />
-
-    <EditText
-        android:id="@+id/et_preco_kwh"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:ems="10"
-        android:hint="@string/preco_kwh"
-        android:inputType="numberDecimal"
-        android:maxLength="10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_recarga_value" />
-
-    <EditText
-        android:id="@+id/et_km_percorrido"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:hint="@string/km_percorrido"
-        android:inputType="numberDecimal"
-        android:maxLength="10"
-        app:layout_constraintEnd_toEndOf="@id/et_preco_kwh"
-        app:layout_constraintStart_toStartOf="@id/et_preco_kwh"
-        app:layout_constraintTop_toBottomOf="@id/et_preco_kwh" />
 
     <Button
         android:id="@+id/btn_calcular"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_margin="16dp"
         android:text="@string/calcular"
-        app:layout_constraintEnd_toEndOf="@id/et_km_percorrido"
-        app:layout_constraintStart_toStartOf="@id/et_km_percorrido"
-        app:layout_constraintTop_toBottomOf="@id/et_km_percorrido"
-
-        />
-
-    <EditText
-        android:id="@+id/tv_resultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/btn_calcular"
-        app:layout_constraintTop_toBottomOf="@id/btn_calcular"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_recarga_value" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
