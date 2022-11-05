@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import br.com.eletriccarapp.R
 
-class CarFragment : Fragment {
+class CarFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
