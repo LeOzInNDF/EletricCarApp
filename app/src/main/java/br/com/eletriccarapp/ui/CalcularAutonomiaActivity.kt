@@ -1,6 +1,5 @@
-package br.com.eletriccarapp.presentation
+package br.com.eletriccarapp.ui
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -9,7 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import br.com.eletriccarapp.R
 
-class CalcularAutonimiaActivity : AppCompatActivity(){
+class CalcularAutonomiaActivity : AppCompatActivity(){
 
     lateinit var preco: EditText
     lateinit var kmPercorrido: EditText
